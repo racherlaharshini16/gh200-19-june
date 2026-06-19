@@ -5,12 +5,11 @@ on: push
 jobs:
   hello-world:
     runs-on: ubuntu-latest
-
     steps:
       - name: Say Hello
-        run: echo "Hello from GH-200 Session from Harshini!!!"
+        run: echo "Hello from GH-200 Session from Himanshu!!!"
 
-      - name: Copy code into runner
+      - name: copy code into runner
         uses: actions/checkout@v6
 
       - name: List files
@@ -19,12 +18,12 @@ jobs:
       - name: Generate ASCII Art
         run: |
           sudo apt-get install -y figlet
-          figlet "GH-200 CoHack"
-          echo "----------------------"
-          figlet -f slant "GitHub Actions"
+          figlet "GH-200 CoHACK"
+          echo "-------------------------"
+          figlet -f digital "GitHub Actions"
           echo "ASCII art generated"
 
-       - name: Run Shell Script
-         run: |
-           chmod +x ./scripts/welcome.sh
-           ./scripts/welcome.sh
+      - name: Run Shell Script
+        run: |
+          chmod +x ./scripts/welcome.sh
+          ./scripts/welcome.sh
