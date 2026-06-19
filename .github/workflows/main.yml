@@ -1,17 +1,17 @@
 name: GH-200 CoHack
 
-on: push 
+on: push
 
 jobs:
   hello-world:
     runs-on: ubuntu-latest
+
     steps:
       - name: Say Hello
         run: echo "Hello from GH-200 Session from Harshini!!!"
 
-
-      - name: copy code into runner
+      - name: Copy code into runner
         uses: actions/checkout@v6
 
-       - name: List files
-         run: ls -la
+      - name: List files
+        run: ls -la
