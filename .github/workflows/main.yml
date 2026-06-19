@@ -8,3 +8,10 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Hello from GH-200 Session from Harshini!!!"
+
+
+      - name: copy code into runner
+        uses: actions/checkout@v6
+
+       - name: List files
+        run: ls -la
